@@ -566,7 +566,7 @@ padding: 1% 6%;
     }
 }
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:1020px){
     nav{
         max-width: calc(100% - 70px);
     }

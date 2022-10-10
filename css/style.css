@@ -619,6 +619,9 @@ padding: 1% 6%;
         height: 38pt;
         width: 95pt;
     }
+}
+@media only screen and (max-width:1020px){
+    
     .section_box_1 h1{
         font-size: 70px;
         width: 50%;

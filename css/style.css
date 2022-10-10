@@ -83,6 +83,7 @@ nav label{
     display: flex;
 }
 .section_box_1 h1{
+    font-family: 'Prompt' , sans-serif;
     font-size: 90px;
     width: 60%;
     color: rgb(174, 246, 255);

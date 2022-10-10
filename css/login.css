@@ -1,0 +1,465 @@
+
+/*font-family: 'Inter Tight', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Prompt', sans-serif;*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background:linear-gradient(175deg, rgb(24, 143, 0), rgb(0, 0, 0),  rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+    overflow-y: auto;
+    color: white;
+    position: sticky;
+}
+.header{
+    border-bottom: 1px solid rgb(82, 82, 82);
+}
+h1{
+    font-size: 50px;
+    color: white;
+    background: url(../images/sportifyimg.png);
+    background-size: cover;
+    background-position: center;
+    height: 60pt;
+    width: 180pt;
+    text-indent: -9999px;
+    margin: 2% auto;
+}
+.login_section{
+    margin:auto;
+    padding: 4%;
+}
+.login_section h4{
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+}
+.login_section h4.or{
+    font-size:14px;
+    width: 500px;
+    margin: 0 auto;
+    border-bottom: 2px solid rgba(153, 153, 153, .3);
+    line-height: 40px;
+}
+.login_section button{
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    padding: 1%;
+    background-color: white;
+    border-radius: 100px;
+    border: none;
+}
+.login_section button a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(202, 202, 202);
+    font-family: 'Poppins', sans-serif;
+}
+.login_section button a:hover{
+    text-decoration: 1px underline white;
+    transition: 200ms ease-in-out;
+}
+.login_section button a i{
+    font-size: 19px;
+    padding-right:10px;
+}
+.login_section button.fb{
+    background: rgba(18, 0, 121, 0.603);
+}
+.login_section button.fb:hover{
+    outline: 2px solid white;
+    transform: scale(1.1);
+    transition: 200ms all ease-in-out;
+}
+.login_section button.insta{
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.726), rgba(0, 0, 175, 0.753));
+}
+.login_section button.insta:hover{
+    outline: 2px solid white;
+    transform: scale(1.1);
+    transition: 200ms all ease-in-out;
+}
+.login_section button.git{
+    background: rgba(44, 1, 37, 0.719);
+}
+.login_section button.git:hover{
+    outline: 2px solid white;
+    transform: scale(1.1);
+    transition: 200ms all ease-in-out;
+}
+.details{
+    width: 500px;
+    /* border: 1px solid white; */
+    padding:0 2%;
+    margin: auto;
+}
+.details form{
+    display: block;
+    flex-direction: column;
+    margin: auto;
+}
+.details form h4{
+    font-size: 18px;
+    margin-top: 15px;
+}
+.details .form_foot{
+    padding-top: 3%;
+    display: inline-flex;
+    width: 500px;
+    border-bottom: 2px solid rgba(173, 173, 173, .3);
+    padding-bottom: 40px;
+}
+.details .form_foot p{
+    margin-left: 15px;
+    font-size: 15px;
+    padding-top: 12px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+.details .form_foot button{
+    /* padding: 0 20%; */
+    width: 300px;
+    max-width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(36, 212, 1);
+    margin: 0 auto;
+}
+.details .form_foot button:hover{
+    transform: scale(1.1);
+    outline: 2px solid white;
+    background-color: rgb(62, 255, 23);
+}
+.details .form_foot button a{
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    line-height: 35px;
+}
+.details .form_foot input[type='checkbox'] {
+    accent-color: rgb(36, 212, 1);
+    outline: none;
+    cursor: pointer;
+}
+.details form input{
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    background-color: rgb(26, 29, 24);
+}
+.details form input[type="text"]{
+    font-size: 18px;
+    color:rgb(255, 255, 255);
+    font-family:'Source Sans Pro', sans-serif;
+
+}
+.details form input::placeholder{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(173, 173, 173);
+    font-family: 'Roboto', sans-serif;
+}
+.details p.forgot_pass{
+    margin-top: 20px;
+    font-family:'Poppins', sans-serif;
+}
+.details .sign_up{
+    width: 500px;
+    padding:5%;
+}
+.details .sign_up h4{
+    font-size: 18px;
+    text-align: center;
+}
+.details .sign_up button{
+    display: block;
+    margin: 20px auto;
+    width: 350px;
+    max-width: 100%;
+    background-color: rgb(0, 255, 0);
+    border: none;
+    border-radius: 100px;
+}
+.details .sign_up button a{
+    font-size: 19px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+    line-height: 50px;
+    color: rgb(0, 0, 0);
+}
+.details .sign_up button:hover{
+    transform: scale(1.1);
+    transition: 200ms ease;
+    outline: 3px solid white;
+}
+
+
+
+
+.alert{
+    position:absolute;
+    display:block;
+    font-size:20px;
+    line-height: 30px;
+    height: 330px;
+    min-width: 100%;
+    width: 50%;
+    padding: 20px;
+    margin: 10% auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(38, 197, 7);
+    border-radius: 20px;
+    z-index: 1;
+}
+.alert h2{
+    margin: 20px;
+}
+.alert p.thanks{
+    color: rgb(110, 252, 110);
+    float: right;
+    padding-top: 25px;
+    font-weight: bold;
+}
+.alert p.admin{
+    color: rgb(110, 252, 110);
+    font-size: 15px;
+    float: left;
+    padding-top: 25px;
+}
+.alert p.admin span{
+    font-weight: bold;
+}
+.closebtn{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    float:right;
+    cursor: pointer;
+    line-height: 23px;
+    transition: 100ms;
+}
+.closebtn:hover{
+    color: black;
+    font-size: 55px;
+    color: rgb(38, 197, 7);
+}
+
+
+/* responsiveness */
+@media only screen and (max-width: 1120px){
+}
+@media only screen and (max-width: 920px) {
+    .alert{
+        height: 310px;
+    }
+ .alert h1{
+    padding: 0;
+    margin: 0 auto;
+    height: 45pt;
+    width: 135pt;
+ }  
+ .alert h2{
+    font-size: 23px;
+    margin: 10px auto;
+ }
+ .alert p{
+    font-size: 17px;
+ }
+}
+@media only screen and (max-width: 550px){
+
+    .details form input{
+        width: 100%;
+    }
+    .details .form_foot button{
+        width: 40%;
+        margin-left: 30%;
+    }
+    .details .sign_up button{
+        transform: scale(.9);
+    }
+    .details  .sign_up button:hover{
+        transform: scale(.95);
+    }
+}
+@media only screen and (max-width: 450px){
+
+    .details form input{
+        width: 80%;
+    }
+    .details .form_foot button{
+        width: 40%;
+        margin-left: 10%;
+    }
+    .details .sign_up{
+        width: 80%;
+    }
+    .details .sign_up button{
+        transform: scale(.8);
+    }
+    .details  .sign_up button:hover{
+        transform: scale(.85);
+    }
+    .login_section h4.or{
+        width: 100%;
+    }
+    .login_section h4{
+        font-size: 15px;
+    }
+
+
+    .details form h4{
+        font-size: 16px;
+    }
+
+    .details form input{
+        height: 45px;
+    }
+    .details form input[type="text"]{
+        font-size: 16px;
+    }
+    .details form input::placeholder{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .details p.forgot_pass{
+        margin-top: 18px;
+        font-size: .9rem;
+    }
+    .details  .sign_up h4{
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 375px){
+    .header h1{
+        height: 30pt;
+        width: 20pt;
+        margin-left:15%;
+    }
+    .alert{
+        transform: scale(.55);
+    }
+    .login_section{
+        width: 100%;
+        margin:0;
+        transform: scale(.9);
+    }
+    .login_section button{
+        width: 65%;
+        margin: 5px 0;
+        padding:1%;
+    }
+
+    .login_section button a{
+        font-size: 12px;
+    }
+    .login_section button a i{
+        font-size: 12px;
+    }
+    .header h1{
+        height: 45pt;
+        width: 120pt;
+    }
+    
+    .details .form_foot label p{
+        font-size: 12px;
+        padding-top:18%;
+        margin-left: 3px;
+    }
+    .details .form_foot button{
+        width: 20%;
+        margin-left:10%;
+    }
+    .details .form_foot button a{
+        font-size: 15px;
+    }
+    .login_section h4.or{
+        width: 220px;
+        font-size: 13px;
+        margin: 0;
+    }
+    .login_section h4{
+        font-size: 13px;
+    }
+    .login_section h4{
+        width: 220px;
+    }
+    .details form h4{
+        font-size: 13px;
+    }
+
+    .details form input{
+        height: 40px;
+        width: 52%;
+        padding: 1%;
+    }
+    .details form input[type="text"]{
+        font-size: 13px;
+    }
+    .details form input::placeholder{
+        font-size: 13px;
+    }
+    .details p.forgot_pass{
+        margin-top: 18px;
+        font-size: .65rem;
+    }
+    .details  .sign_up {
+        width: 55%;
+    }
+
+    .details  .sign_up h4{
+        font-size: .9rem;
+    }
+    .details  .sign_up button a{
+        font-size: 1rem;
+    }
+    .details  .sign_up button{
+        transform: scale(.6);
+    }
+    .details  .sign_up button:hover{
+        transform: scale(.7);
+    }
+}
+
+@media only screen and (max-width: 280px){
+    .alert{
+        height: 370px;
+        width: 100%;
+    }
+    .header h1{
+        height: 30pt;
+        width: 85pt;
+        margin-left: 20%;
+    }
+    .login_section{
+        transform: scale(.75);
+    }
+    .login_section button{
+        width: 90%;
+        margin: 10px 0;
+    }
+    .details{
+        transform: scale(.9);
+    }
+}

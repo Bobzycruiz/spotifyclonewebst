@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/app_play.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <input type="checkbox" id="show-search" />
+            <input type="checkbox" id="show-menu" />
+            <label for="show-menu" class="menu-icon"
+              ><i class="fas fa-bars"></i
+            ></label>
+            <div class="content">
+                <h1 class="logo">Spotify</h1>
+              <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li>
+                  <a href="#" class="desktop-link"><i class="fi fi-sr-arrow-small-left"></i></a>
+                  <input type="checkbox" id="show-explore" />
+                  <label for="show-explore"><span>go-back<i class="fi fi-sr-arrow-small-down"></i></span></label>
+                  <ul>
+                    <li><a href="../index.html">Premium</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact us</a></li>
+                  </ul>
+                </li>
+            </div>
+            <label for="show-search" class="search-icon"
+              ><i class="fas fa-search"></i
+            ></label>
+            <form action="#" class="search-box">
+              <input type="text" placeholder="search here...." required />
+              <button type="submit" class="go-icon">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </button>
+            </form>
+          </nav>
+    </div>
+    <div class="i3dframe">
+    <div class="wrapper">
+        <div class="notch">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+        <header>
+            <button class="hdbtn">
+                <i class="fi fi-sr-arrow-small-left"></i>
+            </button>
+            <h3 class="p-now">
+                Playing now
+            </h3>
+            <button class="hdbtn">
+                <i class="fi fi-sr-list"></i>
+            </button>
+        </header>
+        <div class="player">
+            <div class="img-area"><img src="../images/box1.jpg" alt=""></div>
+
+            <div class="song-details">
+                <h1 class="name">Animations</h1>
+                <h3 class="artist">Coding</h3>
+            </div>
+
+            <div class="audioC">
+                <div class="song-timer">
+                    <span class="current-time">0:00</span>
+                    <span class="max-duration"></span>
+                </div>
+                <div class="progress-area">
+                    <div class="progress-bar">
+                        <audio src="../songs/Marshmello, Khalid - Numb.mp3" id="main-audio"></audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+            <button class="btnC" id="prev">
+                <i class="fi fi-sr-rewind"></i>
+            </button>
+            <button class="btnC play-pause">
+                <i class="fi fi-sr-play play"></i>
+            </button>
+            <button class="btnC" id="next">
+                <i class="fi fi-sr-forward"></i>
+            </button>
+        </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="outro">
+        <h1>Sportify</h1>
+    
+        <ul>
+            <li class="subtitle">COMPANY</li>
+            <li>About</li>
+            <li>Jobs</li>
+            <li>For the Record</li>
+        </ul>
+    
+        <ul>
+            <li class="subtitle">CUMMUNITIES</li>
+            <li>For Artists</li>
+            <li>Developers</li>
+            <li>Advertising</li>
+            <li>Investors</li>
+            <li>Vendors</li>
+        </ul>
+    
+        <ul>
+            <li class="subtitle">USEFUL LINKS</li>
+            <li>Support</li>
+            <li>Web Player</li>
+            <li>Free Mobile Apps</li>
+        </ul>
+        <div class="icons">
+            <a href="#" class="btn"> <i class="fab fa-instagram"></i></a>
+            <a href="#" class="btn"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="btn"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li>Legal</li>
+            <li>Privacy center</li>
+            <li>Privacy Policy</li>
+            <li>Cookies</li>
+            <li>About Ads</li>
+        </ul>
+    
+        <div class="left_footer">
+            <p>🇳🇬️ Nigeria</p>
+            <p>2022 Spotify designed by Bobzycruiz AB</p>
+        </div>
+    </div>
+
+    <script src="../js/music_list.js"></script>
+    <script src="../js/js.js"></script>
+</body>
+</html>

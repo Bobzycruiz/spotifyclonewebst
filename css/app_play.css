@@ -723,7 +723,6 @@ padding: 1% 6%;
 @media screen and (max-width: 360px){
         .nav nav{
             padding:0 25px;
-            border: 1px solid white;
         }
         .i3dframe{
             transform: scale(.7);
